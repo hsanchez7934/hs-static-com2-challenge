@@ -1,0 +1,554 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Pontano Sans', sans-serif;
+  background-color: #373737;
+}
+
+header {
+  width: 100%;
+  background-color: #f4f4f4;
+  height: 140px;
+}
+
+header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav {
+  width: 60%;
+  float: left;
+  height: 100%;
+  padding-top: 55px;
+  padding-left: 20px;
+}
+
+h1 {
+  margin: 0;
+  color: #c0b283;
+  display: inline-block;
+  font-size: 55px;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+h2 {
+  font-size: 35px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #f4f4f4;
+}
+
+.hamburger-menu-container {
+  display: none;
+}
+
+.links {
+  margin: 40px 30px 0px 0px;
+  color: #373737;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.links:hover {
+  text-decoration: underline;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.select-style{
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  padding-left: 5px;
+  margin-left: 5px;
+  margin-top: 2px;
+  background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+  height: 25px;
+  overflow: hidden;
+  width: 180px;
+}
+
+.user-admin {
+  font-size: 11px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  height: 25px;
+  width: 208px;
+}
+
+.user-admin:focus {
+  outline: none;
+}
+
+.black {
+  background-color: #373737;
+}
+
+.link-logos {
+  height: 20px;
+  width: 20px;
+  right: 5px;
+  position: relative;
+  top: 3px;
+}
+
+.profile-cards {
+  height: 420px;
+  width: 280px;
+  background-color: #f4f4f4;
+  box-shadow: 1px 1px 10px 2px;
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.image-container {
+  width: 100%;
+  height: 35%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.image-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.id-card-name {
+  width: 100%;
+  height: 16.25%;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.id-url {
+  width: 100%;
+  height: 16.25%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+}
+
+.playlist-name {
+  height: 16.25%;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+}
+
+.attachments {
+  height: 16.25%;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.arrow {
+  height: 50px;
+  width: 50px;
+  float: left;
+}
+
+.arrow:hover {
+  animation: roll 1s infinite;
+  transform: rotate(30deg);
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.views-container {
+  float: right;
+}
+
+.views {
+  color: #f4f4f4;
+  margin: 0;
+  text-align: center;
+  font-size: 10px;
+}
+
+.views-number {
+  margin: 0;
+  color: #f4f4f4;
+  text-align: center;
+  font-size: 25px;
+}
+
+.recipeient-name {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.recipeient-name-date {
+  margin: 0;
+  font-size: 11px;
+}
+
+.id-url-text {
+  margin: 0;
+  background-color: #dcd0c0;
+  font-size: 12px;
+  height: 50px;
+  word-wrap: break-word;
+  padding: 5px;
+}
+
+.playlist-text {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.name-of-playlist {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.attachments-text {
+  margin-bottom: 0;
+  margin-top: -10px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.attachments-number {
+  margin: 0;
+  font-size: 25px;
+  color: #c0b283;
+}
+
+#page-logo-container {
+  width: 40%;
+  float: right;
+  height: 100%;
+}
+
+#user-logo {
+  height: 30px;
+  width: 30px;
+}
+
+#page-logo {
+  width: 50px;
+  height: 50px;
+  margin-top: 2px;
+}
+
+#top-part {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15px;
+  padding-top: 10px;
+}
+
+#bottom-part {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 15px;
+  padding-right: 10px;
+}
+
+#bottom-section-main {
+  width: 100%;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#image-container-box1 {
+  background-image: url(assets/tonyrobbins.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#image-container-box1:hover {
+  background-image: url(assets/tonyrobbins2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image 1s;
+}
+
+#image-container-box2 {
+  background-image: url(assets/lesbrown.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#image-container-box2:hover {
+  background-image: url(assets/lesbrown2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image 1s;
+}
+
+#image-container-box3 {
+  background-image: url(assets/jimrohn.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#image-container-box3:hover {
+  background-image: url(assets/jimrohn2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image 1s;
+}
+
+#image-container-box4 {
+  background-image: url(assets/elonmusk.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#image-container-box4:hover {
+  background-image: url(assets/elonmusk2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image 1s;
+}
+
+#image-container-box5 {
+  background-image: url(assets/drake.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#image-container-box5:hover {
+  background-image: url(assets/drake2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image 1s;
+}
+
+#image-container-box6 {
+background-image: url(assets/warrenbuffet.png);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+#image-container-box6:hover {
+background-image: url(assets/warrenbuffet2.png);
+background-repeat: no-repeat;
+background-size: cover;
+transition: background-image 1s;
+}
+
+#image-container-box7 {
+  background-image: url(assets/nikola.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#image-container-box7:hover {
+  background-image: url(assets/nikolatesla2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image 1s;
+}
+
+#image-container-box8 {
+  background-image: url(assets/james.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#image-container-box8:hover {
+  background-image: url(assets/james2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image 1s;
+}
+
+@media (max-width: 800px) {
+  nav {
+    padding-top: 10px;
+  }
+
+  .links {
+    margin: 10px 30px 0px 0px;
+    color: #373737;
+    display: block;
+    font-size: 15px;
+  }
+
+  #page-logo-container {
+    width: 60%;
+  }
+
+  nav {
+    width: 40%;
+  }
+}
+
+@media (max-width: 650px) {
+  .profile-cards {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h2 {
+  text-align: center;
+  }
+}
+
+@media (max-width: 550px) {
+  #top-part {
+    display: none;
+  }
+
+  #bottom-part {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .links {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #page-logo-container {
+    width: 100%;
+  }
+
+.hamburger-menu-container {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  }
+
+.hamburger-menu-container:after {
+  content: '';
+  display: table;
+  clear: both;
+  }
+
+.hamburger-menu {
+  background-image: url(assets/menu.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-top: 5px;
+  margin-left: 10px;
+  }
+
+  #page-logo {
+    margin-top: -14px;
+  }
+
+  #influential-mobile {
+    margin: 0;
+    color: #fff;
+    float: left;
+  }
+
+  #user-logo-mobile {
+    height: 30px;
+    width: 30px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    background-image: url(assets/user.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #373737;
+    border: 5px solid #dcd0c0;
+    width: 190px;
+    height: 140px;
+    left: 25px;
+    top: 12px;
+    list-style: none;
+    opacity: 0.9;
+    color: #dcd0c0;
+    padding-top: 10px;
+  }
+
+  #user-menu {
+    display: none;
+    position: absolute;
+    background-color: #373737;
+    border: 5px solid #dcd0c0;
+    width: 190px;
+    height: 140px;
+    right: 25px;
+    top: 12px;
+    list-style: none;
+    opacity: 0.9;
+    color: #dcd0c0;
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+
+  .list-items {
+    font-size: 17px;
+    margin-bottom: 15px;
+  }
+
+  .user-list {
+    font-size: 17px;
+    margin-bottom: 15px;
+  }
+
+  .user-list:hover {
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .list-items:hover {
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  #user-logo-mobile:hover #user-menu {
+    display: block;
+  }
+
+  .hamburger-menu:hover #dropdown-menu {
+    display: block;
+  }
+}
