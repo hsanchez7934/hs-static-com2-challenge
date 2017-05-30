@@ -31,8 +31,7 @@ nav {
   width: 60%;
   float: left;
   height: 100%;
-  padding-top: 55px;
-  padding-left: 20px;
+  padding: 55px 0px 0px 20px;
 }
 
 h1 {
@@ -45,9 +44,8 @@ h1 {
 
 h2 {
   font-size: 35px;
-  margin-top: 0;
-  margin-bottom: 30px;
   color: #f4f4f4;
+  margin: 0px 0px 30px;
 }
 
 .hamburger-menu-container {
@@ -111,16 +109,13 @@ h2 {
   background-color: #f4f4f4;
   box-shadow: 1px 1px 10px 2px;
   display: inline-block;
-  margin-right: 15px;
-  margin-bottom: 15px;
+  margin: 0px 15px 15px 0px;
 }
 
 .image-container {
   width: 100%;
   height: 35%;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
+  padding: 10px 10px 0px;
 }
 
 .image-container:after {
@@ -132,32 +127,25 @@ h2 {
 .id-card-name {
   width: 100%;
   height: 16.25%;
-  padding-top: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 15px 10px 0px;
 }
 
 .id-url {
   width: 100%;
   height: 16.25%;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
+  padding: 5px 10px 0px;
 }
 
 .playlist-name {
   height: 16.25%;
   width: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
+  padding: 5px 10px 0px;
 }
 
 .attachments {
   height: 16.25%;
   width: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0px 10px 0px;
 }
 
 .arrow {
@@ -231,8 +219,7 @@ h2 {
 }
 
 .attachments-text {
-  margin-bottom: 0;
-  margin-top: -10px;
+  margin: -10px 0px 0px;
   font-size: 11px;
   font-weight: 700;
 }
@@ -265,8 +252,7 @@ h2 {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  padding-right: 15px;
-  padding-top: 10px;
+  padding: 10px 15px 0px 0px;
 }
 
 #bottom-part {
@@ -274,15 +260,12 @@ h2 {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  padding-top: 15px;
-  padding-right: 10px;
+  padding: 15px 10px 0px 0px;
 }
 
 #bottom-section-main {
   width: 100%;
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 10px 20px 0px;
 }
 
 #image-container-box1 {
@@ -415,6 +398,7 @@ transition: background-image 1s;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
   }
 
   h2 {
@@ -466,8 +450,7 @@ transition: background-image 1s;
   width: 40px;
   height: 40px;
   float: left;
-  margin-top: 5px;
-  margin-left: 10px;
+  margin: 5px 0px 0px 10px;
   }
 
   #page-logo {
@@ -484,8 +467,7 @@ transition: background-image 1s;
     height: 30px;
     width: 30px;
     float: right;
-    margin-right: 10px;
-    margin-top: 10px;
+    margin:10px 10px 0px 0px;
     background-image: url(assets/user.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -518,8 +500,7 @@ transition: background-image 1s;
     list-style: none;
     opacity: 0.9;
     color: #dcd0c0;
-    padding-top: 10px;
-    padding-left: 20px;
+    padding: 10px 0px 0px 20px;
   }
 
   .list-items {
